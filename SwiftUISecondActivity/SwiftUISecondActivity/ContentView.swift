@@ -4,48 +4,82 @@ import AVFoundation
 struct ContentView: View {
     
     @State var number: Int = 0
-    @State var result: String = "Result"
-    var speechSynth = AVSpeechSynthesizer()
+    @State var resultString: String = ""
+    @State var selectedIndex: Int = 4
+    
+    let speechSynth = AVSpeechSynthesizer()
     
     var body: some View {
         VStack {
+            Text("Multiply App")
+                .font(.headline)
+                .padding()
             HStack {
                 Group {
-                    Button("1") {
-                        result = multiplyFunction(num: 1).joined(separator: "\n")
+                    Button {
+                        multiplyFunction(1)
+                    } label: {
+                        Text("1")
                     }
-                    Button("2") {
-                        result = multiplyFunction(num: 2).joined(separator: "\n")
+                    
+                    Button {
+                        multiplyFunction(2)
+                    } label: {
+                        Text("2")
                     }
-                    Button("3") {
-                        result = multiplyFunction(num: 3).joined(separator: "\n")
+                    
+                    Button {
+                        multiplyFunction(3)
+                    } label: {
+                        Text("3")
                     }
-                    Button("4") {
-                        result = multiplyFunction(num: 4).joined(separator: "\n")
+                    
+                    Button {
+                        multiplyFunction(4)
+                    } label: {
+                        Text("4")
                     }
-                    Button("5") {
-                        result = multiplyFunction(num: 5).joined(separator: "\n")
+                    
+                    Button {
+                        multiplyFunction(5)
+                    } label: {
+                        Text("5")
                     }
-                    Button("6") {
-                        result = multiplyFunction(num: 6).joined(separator: "\n")
+                    
+                    Button {
+                        multiplyFunction(6)
+                    } label: {
+                        Text("6")
                     }
-                    Button("7") {
-                        result = multiplyFunction(num: 7).joined(separator: "\n")
+                    
+                    Button {
+                        multiplyFunction(7)
+                    } label: {
+                        Text("7")
                     }
-                    Button("8") {
-                        result = multiplyFunction(num: 8).joined(separator: "\n")
+                    
+                    Button {
+                        multiplyFunction(8)
+                    } label: {
+                        Text("8")
                     }
-                    Button("9") {
-                        result = multiplyFunction(num: 9).joined(separator: "\n")
+                    
+                    Button {
+                        multiplyFunction(9)
+                    } label: {
+                        Text("9")
                     }
                 }
                 .padding(5)
             }
-            Text("\(result)")
+            
+            if selectedIndex > 0 {
+                Text("\(resultString)")
+            }
             
             Spacer()
             Button("Speech") {
-                speakResult(result)
+                speakResult(resultString)
             }
             
         }
@@ -53,17 +87,14 @@ struct ContentView: View {
         .padding()
     }
     
-    func multiplyFunction(num: Int) -> [String] {
-        
-        var resultArray: [String] = []
+    func multiplyFunction(_ num: Int) {
+        resultString = ""
         var result: Int = 0
         
         for i in 1...9 {
             result = num * i
-            resultArray.append("\(num) * \(i) = \(result)")
+            resultString += ("\(num) \u{D7} \(i) = \(result)\n")
         }
-        
-        return resultArray
     }
     
     func speakResult(_ result: String) {

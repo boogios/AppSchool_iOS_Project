@@ -170,13 +170,13 @@ struct ContentView: View {
     
     func buttonPressed(_ selectedNumber: Int) {
         
+        if selectedNumber == imageBundle[currentProblemIndex].answer {
+            correctCount += 1
+        } else {
+            wrongCount += 1
+        }
+        
         guard currentProblemIndex != imageBundle.count - 1 else {
-            
-            if selectedNumber == imageBundle[currentProblemIndex].answer {
-                correctCount += 1
-            } else {
-                wrongCount += 1
-            }
             
             currentStatus = GameStatus.end
             startButtonDisabled = false
@@ -184,12 +184,6 @@ struct ContentView: View {
             currentProblemIndex = 0
             
             return
-        }
-        
-        if selectedNumber == imageBundle[currentProblemIndex].answer {
-            correctCount += 1
-        } else {
-            wrongCount += 1
         }
         
         currentProblemIndex += 1

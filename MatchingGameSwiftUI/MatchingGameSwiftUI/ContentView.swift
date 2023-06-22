@@ -116,7 +116,7 @@ struct ContentView: View {
                 .disabled(questionButtonDisabled)
             }
             Spacer()
-            Text("O: \(correctCount)\nX: \(wrongCount)")
+            Text("정답 수: \(correctCount)개\n오답 수: \(wrongCount)개")
                 .font(.largeTitle)
             Spacer()
             switch currentStatus {

@@ -9,18 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     
+    // 맞은 문제 개수, 틀린 문제 개수, 문제의 보기를 담을 배열
     @State var correctCount: Int = 0
     @State var wrongCount: Int = 0
     @State var questionArray: [Int] = [0, 0, 0, 0]
     
-    var solvedProblemNumber: Int {
-        return correctCount + wrongCount
-    }
-    
+    // 현재 문제의 Index값, 현재 게임 중인지 끝났는지를 알려주기 위한 현재 상태 값 변수
     @State var currentProblemIndex: Int = 0
     @State var currentStatus = GameStatus.start
-    @State var startButtonDisabled = true
-    @State var questionButtonDisabled = true
+    
+    // 버튼 비활성화를 위한 상태 변수
+    @State var startButtonDisabled = true // Start 버튼
+    @State var questionButtonDisabled = true // 문제 버튼
     
     var totalProblemCount: Int {
         return imageBundle.count
@@ -32,6 +32,7 @@ struct ContentView: View {
         case end
     }
     
+    // 임의로 문제를 담은 구조체 배열
     var imageBundle: [Problem] = [
         Problem(image: "avengers", answer: 7),
         Problem(image: "family", answer: 40),

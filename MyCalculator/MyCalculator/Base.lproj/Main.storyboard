@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khj-i3-CIR">
+                                <rect key="frame" x="21" y="460" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="7" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cap-S5-C0O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-Mh-zzO">
+                                <rect key="frame" x="112" y="460" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="8" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFS-mw-unv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBd-TJ-yG9">
+                                <rect key="frame" x="203" y="460" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="9" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3m4-bT-n5k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blh-Xc-nlZ">
+                                <rect key="frame" x="21" y="371" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="AC" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGray4Color"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EAV-hY-vkJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbQ-r5-2VT">
+                                <rect key="frame" x="112" y="371" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="+/-" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGray4Color"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPe-X1-Qva">
+                                <rect key="frame" x="203" y="371" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="%" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGray4Color"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uub-77-o3p">
+                                <rect key="frame" x="21" y="549" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="4" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FGy-LW-f4s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1C-QL-WG7">
+                                <rect key="frame" x="112" y="549" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="5" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W01-ZY-4St"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5j8-z7-EW8">
+                                <rect key="frame" x="203" y="549" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="6" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWS-jw-mWz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnd-CZ-4Wj">
+                                <rect key="frame" x="21" y="638" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="1" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QH6-es-6gl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxM-G5-UIX">
+                                <rect key="frame" x="112" y="638" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="2" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kF-Ty-PRO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enh-S1-Jwy">
+                                <rect key="frame" x="203" y="638" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="3" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G5J-wZ-Kos"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZc-Zc-sDA">
+                                <rect key="frame" x="294" y="460" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="X" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressOprButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h6X-YB-Z7k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaL-ZK-Fr4">
+                                <rect key="frame" x="294" y="371" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="/" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressOprButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qgv-4c-uo2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLG-15-L5K">
+                                <rect key="frame" x="294" y="549" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="-" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressOprButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jUA-Gd-DpJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKN-Uv-SOr">
+                                <rect key="frame" x="294" y="638" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="+" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressOprButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tl4-0B-6be"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kC6-mU-uzz">
+                                <rect key="frame" x="294" y="727" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="=" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressResultButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oY1-Lu-F30"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdX-7H-xJ8">
+                                <rect key="frame" x="21" y="727" width="168" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="0" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressNumberButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CEd-cn-fb9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w94-Ev-NZr">
+                                <rect key="frame" x="203" y="727" width="77" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="." cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah7-Y7-tay">
+                                <rect key="frame" x="21" y="256" width="342" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="ah7-Y7-tay" id="9rO-8f-mjE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
